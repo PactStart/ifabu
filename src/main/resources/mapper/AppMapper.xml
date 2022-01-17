@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.pactstart.ifabu.dao.AppMapper">
+  <resultMap id="BaseResultMap" type="io.pactstart.ifabu.entity.App">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="app_key" jdbcType="VARCHAR" property="appKey" />
+    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="create_at" jdbcType="BIGINT" property="createAt" />
+    <result column="update_at" jdbcType="BIGINT" property="updateAt" />
+  </resultMap>
+</mapper>

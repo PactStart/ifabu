@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ifabu
+    username: paste_your_username
+    password: paste_your_password
+mybatis:
+  type-aliases-package: io.pactstart.ifabu.entity
+  mapper-locations: classpath*:mapper/*.xml
+  executor-type: simple
+  configuration.map-underscore-to-camel-case: true
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+mapper:
+  mappers: io.pactstart.ifabu.base.MyMapper
+  not-empty: false
+  identity: MYSQL
+pagehelper:
+  helperDialect: mysql
+  reasonable: false
+  supportMethodsArguments: true
+  params: count=countSql
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.pactstart.ifabu.dao.AppUploadLogMapper">
+  <resultMap id="BaseResultMap" type="io.pactstart.ifabu.entity.AppUploadLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="app_id" jdbcType="INTEGER" property="appId" />
+    <result column="platform" jdbcType="INTEGER" property="platform" />
+    <result column="seq" jdbcType="INTEGER" property="seq" />
+    <result column="version" jdbcType="VARCHAR" property="version" />
+    <result column="innner_version" jdbcType="VARCHAR" property="innnerVersion" />
+    <result column="file_size" jdbcType="BIGINT" property="fileSize" />
+    <result column="file_url" jdbcType="VARCHAR" property="fileUrl" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="create_at" jdbcType="BIGINT" property="createAt" />
+    <result column="update_at" jdbcType="BIGINT" property="updateAt" />
+  </resultMap>
+</mapper>
